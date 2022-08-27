@@ -1,0 +1,374 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn {
+    background-color: rgb(40, 40, 131);
+    padding: 10px 50px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background: rgb(28, 164, 28);
+    color: white;
+    border: 1px solid white;
+}
+
+h5 {
+    color: rgb(28, 164, 28);
+    word-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.con {
+    background-color: #ccc;
+}
+.section-about h5 , .section-dish h5 , .section-menu h5 , .section-review h5 , .section-order h5{
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ============ Start Navbar ============== */
+
+.header {
+    width: 100%;
+    background: rgb(221, 215, 215);
+    position: fixed;
+    z-index: 15;
+    top: 0%;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav .icons {
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.header .nav .icons i {
+    color: rgb(28, 164, 28);
+}
+
+.header .nav .social-links a {
+    margin: 0px 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.header .nav .social-links a:nth-child(1) {
+    background: rgb(28, 164, 28);
+}
+
+.header .nav .social-links a:hover {
+    background: rgb(28, 164, 28);
+}
+
+.header .nav .social-icons span {
+    background: #ccc;
+    padding: 10px 15px;
+    border-radius: 200px;
+}
+
+.header .nav .social-icons i {
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.header .nav .social-icons span:hover {
+    background: rgb(28, 164, 28);
+}
+
+.header .nav .social-icons i:hover {
+    color: white;
+    transform: rotate(360deg);
+}
+/* ================== Search ==============  */
+#inputSearch input{
+    width: 300px;
+    outline: none;
+    padding: 10px;
+    margin-left: 75%;
+}
+.active{
+    display: none;
+}
+/* ============ Start Section home ============  */
+.section-home {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-home .text h1 {
+    font-size: 50px;
+    margin: 15px 0px;
+}
+
+.section-home .text p {
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+}
+
+.section-home .image {
+    padding-top: 150px;
+}
+
+/* ============ Start Section dishes ============  */
+.section-dish {
+    text-align: center;
+    padding: 70px;
+}
+
+.section-dish table , .section-menu table{
+    width: 90%;
+    margin: 10px auto;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.section-dish table td , .section-menu table td{
+    padding: 20px;
+    position: relative;
+}
+.section-dish table tr td:hover , .section-menu table tr td:hover{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.section-dish .eye{
+    position: absolute;
+    top: 4%;left: 2%;
+    background: #ccc;
+    color: black;
+    padding: 5px;
+    border-radius: 50px;
+}
+.section-dish .heart{
+    position: absolute;
+    top: 4%;right: 8%;
+    background: #ccc;
+    color: black;
+    padding: 5px;
+    border-radius: 50px;
+}
+.section-dish .heart:hover , .section-dish .eye:hover{
+    background: #fff;
+    color: rgb(28, 164, 28);
+}
+.section-dish table tr td img {
+    margin: 5px;
+    transition: all 0.2s;
+    overflow: hidden;
+}
+
+.section-dish table tr td img:hover {
+    transform: scale(1.2);
+}
+.section-dish table tr td h4{
+    padding: 5px;
+}
+.section-dish table tr td i , .section-menu table tr td i{
+    color: rgb(28, 164, 28);
+    margin: 10px 0px;
+}
+.section-dish table tr td span , .section-menu table tr td span{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 25px;
+    font-family: 500;
+}
+/*  ================= Section About ================= */
+.section-about , .section-menu , .section-review , .section-order{
+    padding: 70px;
+}
+.section-about .row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.section-about .about-img img{
+    width:700px;
+}
+.section-about .about-content{
+    padding-top: 50px;
+}
+.section-about .about-content h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+    letter-spacing: 0.1rem;
+}
+.section-about .about-content p{
+    margin-bottom: 10px;
+    letter-spacing: 00.1rem;
+    word-spacing: 0.1rem;
+    line-height: 2.5rem;
+    color: #ccc;
+}
+.section-about .about-content span{
+    background-color: #ccc;
+    padding: 10px 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.section-about .about-content span i , .section-review .review-content i , .last span{
+    color: rgb(28, 164, 28) ;
+}
+/* =================== Section Menu ========== */
+.section-menu table td img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px black;
+}
+.section-menu .heart {
+    position: absolute;
+    top: 4%;right: 8%;
+    font-size: 30px;
+    background: #ccc;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+}
+.section-menu .heart:hover{
+    background: #fff;
+    color: rgb(28, 164, 28);
+}
+.section-menu table td p {
+    margin: 8px 0px;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+/* =================== Section review ========== */
+.section-review .row{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.section-review .review-content{
+    width: 400px;
+    margin: 15px ;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+.section-review .review-content img{
+    padding: 15px 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.section-review .review-content p{
+    padding: 5px 10px;
+    margin: 5px;
+    color: #ccc;
+    line-height: 1.5rem;
+    word-spacing: 0.1rem;
+}
+.section-review .review-content h3{
+    padding: 10px;
+}
+/* ================ Section Order =============  */
+.section-order #form{
+    width: 60%;
+    margin: 10px auto;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 2px 10px black;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px 0px;
+}
+.section-order #form span{
+    color: #ccc;
+    margin: 10px;
+}
+.section-order #form input{
+    width: 350px;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    padding: 10px ;
+    margin: 10px;
+}
+.section-order #form textarea{
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    background-color: #ccc;
+}
+.section-order #form .btn{
+    background-color: rgb(40, 40, 131);
+    width: 200px;
+}
+.section-order #form .btn:hover{
+    background: rgb(28, 164, 28);
+    color: white;
+}
+/* =================== Section Footer ==============  */
+.section-footer .row{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.section-footer h1{
+    padding: 15px;
+}
+.section-footer li{
+    background-color: rgb(28, 164, 28);
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.section-footer li:hover{
+   color: rgb(28, 164, 28);
+   background-color: white;
+   border: 1px solid rgb(28, 164, 28);
+   color: black;
+}
+.section-footer li i{
+    font-size: 18px;
+    color: black;
+    margin: 0px 5px;
+}
+.section-footer a{
+    text-decoration: none;
+    color: black;
+}
+/* ================= The Last ==================  */
+.last{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+.last p{
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+}
+/* ======================= Add lists ============= */
+
+
